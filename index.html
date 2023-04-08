@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Block Notifier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="header-container">
+        <div class="title-row">
+            <img class="bitcoin-symbol" src="bitcoin_symbol.jpg" alt="Bitcoin Symbol">
+            <h1>Bitcoin Blocklist</h1>
+            <img class="bitcoin-symbol" src="bitcoin_symbol.jpg" alt="Bitcoin Symbol">
+        </div>
+        <div class="button-container">
+            <button id="start-button" class="button">Start Listening</button>
+            <button id="stop-button" class="button">Stop Listening</button>
+        </div>
+    </div>
+        <div id="block-list-container">
+            <ul id="block-list"></ul>
+        </div>
+
+        <div id="search-container" class="styled-box">
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search Blockchain" />
+        <button type="submit" class="search-button">Search</button>
+    </form>
+        </div>
+
+          
+    <audio id="coin-drop-sound" src="coin-drop.mp3" preload="auto"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
